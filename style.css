@@ -27,7 +27,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-
+    padding: 3rem calc((100vw-1300px)/2);
    
 }
 
@@ -39,6 +39,16 @@ img {
     background-color: #f3ed3d ;
 }
 
+.two{
+    background-color: #0f1a1f;
+}
+
+.three {
+    background-color: #ee767e;
+}
+.four {
+    background-color: #6b514a;
+}
 .left-column{
     display: flex;
     justify-content: center;
@@ -47,11 +57,17 @@ img {
     padding: 0 2rem;
 }
 
+.right-colum {
+    padding: 2rem;
+}
 .get-started {
     padding: .5rem 1rem;
     margin-top: 1rem;
 }
 
-.two{
-    background-color: #0f1a1f;
+
+@media screen and (max-width: 780px) {
+    .container {
+grid-template-columns: 1fr;
+    }
 }
